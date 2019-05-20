@@ -115,7 +115,7 @@ def grabTree(filename):
     return pickle.load(fr)
 
 def main():
-    fr = open('/home/quentinyao/PycharmProjects/mliac3/lenses.txt')
+    fr = open('/home/quentinyao/PycharmProjects/mlia/mliac3/lenses.txt')
     lenses = [inst.strip().split('\t') for inst in fr.readlines()]
     lenseLabels = ['age', 'prescript', 'astigmatic', 'tearRate']
     lensesTree = createTree(lenses, lenseLabels)
